@@ -33,7 +33,7 @@ skip these steps and jump straight to submitting a pull request.
 
 ### Find something that belongs in Cats
 
-Looking for a way that you can help out? Check out our [open issues](https://github.com/typelevel/cats/issues) and look for ones tagged as _**help wanted**_ or _**low-hanging fruit**_. These issues are the easiest way to start contributing, but if you find other items that catch your eye, you're most than welcome to tackle them!
+Looking for a way that you can help out? Check out our [open issues](https://github.com/typelevel/cats/issues) and look for ones tagged as _**help wanted**_, _**good first issue**_ or _**low-hanging fruit**_. These issues are the easiest way to start contributing, but if you find other items that catch your eye, you're more than welcome to tackle them!
 
 Make sure that it's not already assigned to someone and that nobody has left a comment saying that they are working on it!
 
@@ -125,9 +125,9 @@ builds:
 
 **IntelliJ**
 
-- Be warned, IntelliJ is currently not 100% accurate at reporting compilation errors, there *will* be cases that it reports errors incorrectly. If you simply don't want to see the errors, a quick an easy work around is to disable *Type-Aware Highlighting* by clicking the `[T]` icon in the bottom toolbar.
+- Be warned, IntelliJ is currently not 100% accurate at reporting compilation errors, there *will* be cases that it reports errors incorrectly. If you simply don't want to see the errors, a quick and easy work around is to disable *Type-Aware Highlighting* by clicking the `[T]` icon in the bottom toolbar.
 
-- There is an open [issue](https://github.com/typelevel/cats/issues/2152) with the IntelliJ scala plugin, which prevents it from configuring similacrum correctly when importing the cats project. The work around for this issue is to set `val CompileTime = Provided` in `build.sbt`. Note: Be careful not to commit this change.
+- There is an open [issue](https://github.com/typelevel/cats/issues/2152) with the IntelliJ scala plugin, which prevents it from configuring simulacrum correctly when importing the cats project. The workaround for this issue is to set `val CompileTime = Provided` in `build.sbt`. Note: Be careful not to commit this change.
 
 - IntelliJ does have [support](https://blog.jetbrains.com/scala/2015/07/31/inline-refactoring-for-type-aliases-and-kind-projector-support/) for kind-projector. However, it is not always seamless. If you are unable to get IntelliJ to recognise the special symbols that kind-project provides, such as `?` `Lambda[X => G[F[A]]]` or `λ[X => G[F[A]]]` try upgrading to the early access preview (EAP) version of the scala plugin. This can be done under `Settings > Languages & Frameworks > Scala > Updates`
 
@@ -179,7 +179,7 @@ $ sbt
 ```
 This procedure will report if there are any binary compatibility issues that should be fixed.
 
-As a side note, the latter command uses [sbt-mima](https://github.com/lightbend/migration-manager) (shorthand for "Migration Manager") plugin and you can find more information about it [here](https://github.com/lightbend/migration-manager/wiki).
+As a side note, the latter command uses [sbt-mima](https://github.com/lightbend/migration-manager) (shorthand for "Migration Manager") plugin, and you can find more information about it [here](https://github.com/lightbend/migration-manager/wiki).
 
 
 ## Contributing documentation
